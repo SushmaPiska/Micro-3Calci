@@ -1,0 +1,77 @@
+:root{
+    --button-color: #647299;
+}
+
+body{
+    background-color: #4b597e;
+    height: 100vh;
+    
+}
+.calci{
+    color: white;
+    margin: 5vh 10vw;
+    height: 90%;
+    box-sizing: border-box;
+    
+}
+input{
+    background-color: #181F32;
+    color: white;
+    font-weight: 500;
+    font-size: xx-large;
+    height: 20vh;
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    text-align: right;
+    padding:30px;
+    box-sizing: border-box;
+}
+.keypad{
+    background-color: #252D44;
+    color: white;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    margin-top: 10px;
+    height: 65vh;
+    width: 100%;
+    padding: 12px;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+button{
+    box-sizing: border-box;
+    align-items: center;
+    margin: 12px;
+    border-radius: 10px;
+    cursor: pointer;
+    border: none;
+    color: #3B4664;
+    font-weight: 700;
+   
+}
+button:hover{
+    background-color: rgb(220, 220, 232);
+}
+.delete{
+    background-color: var(--button-color);
+    color:#FFFFFF;
+
+
+}
+.reset{
+    grid-column: 1/span 2;
+    background-color: var(--button-color);
+    color:#FFFFFF;
+}
+.delete:hover, .reset:hover{
+    background-color: #727fa0;
+}
+.eval{
+    grid-column: 3/5;
+    background-color: #D13F30;
+    color:#FFFFFF;
+}
+.eval:hover{
+    background-color: #dc5748;
+}
